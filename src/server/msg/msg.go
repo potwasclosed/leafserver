@@ -4,7 +4,7 @@ import (
 	"github.com/name5566/leaf/network"
 )
 
-var Processor network.Processor  //定义路由到哪个模块
+var Processor network.Processor  //定义处理过程,支持路由前拦截,路由到哪个模块 或者不路由, 相当于io层拦截了或者偷窥信息.
 
 func init() {
 
