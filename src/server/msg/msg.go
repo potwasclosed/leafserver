@@ -48,3 +48,19 @@ example := func() {
 }
 	_ = example
 */
+
+/*服务互联
+两个服务互相连接,到底哪个作为Client /Server ?  
+A调用B的话,A主动创建一个连接  B调用A的话,B主动创建一个连接,    这样调用别人 都从 自己主动想连接的会话管理器中获取对方的连接.
+Server线程,想提供连接的话自己连接启动的时候上报给注册中心
+client发出event, 服务端收到event处理,然后直接用event.ses回包就好了.
+两个game互相连接的话可以这样
+
+感觉还是加一个代理类比较好,处理当前进程??
+比如game 当client 连接 网关, 又当server被 api服务器调用.
+leaf 怎么处理的 ? 两个模块掉用是不同的clitne ,新建立  chanrpc的时候设置的那个.
+
+每个game 都提供一个对外的game_proxy_zone1
+
+*/
+
