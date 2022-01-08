@@ -17,3 +17,5 @@ func init() {
 //type Module struct {  //这个结构要抽象到底层. 不然是私有的结构 包和包之间还是会互相引用
 //	*module.Skeleton
 //}
+
+//chanrpc的一个容器可以放到一个单独的结构中维护,map[id/chanName]chanRpc而不是直接引用那个模块的变量这样不容易循环依赖.
