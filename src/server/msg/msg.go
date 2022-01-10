@@ -63,7 +63,8 @@ leaf 怎么处理的 ? 两个模块掉用是不同的clitne ,新建立  chanrpc�
 每个game 都提供一个对外的game_proxy_zone1
 
 [需要反向代理的]
-tcp.svc connected 连接上之后,发一个消息告诉svr我是什么服务,然后svr添加
+tcp.svc connected 连接上之后,发一个消息告诉svr我是什么服务,然后svr添加,微服务需要 比如 gate和game 互相连接. 这种明显存在一个CS职责的身份
+当两个同类型的服务器需要相互连接时如何处理? 每个svr都创建一个client连接对方? 暂时只想到类似的方法
 
 */
 
