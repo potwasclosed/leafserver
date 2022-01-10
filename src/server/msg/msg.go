@@ -62,5 +62,8 @@ leaf 怎么处理的 ? 两个模块掉用是不同的clitne ,新建立  chanrpc�
 
 每个game 都提供一个对外的game_proxy_zone1
 
+[需要反向代理的]
+tcp.svc connected 连接上之后,发一个消息告诉svr我是什么服务,然后svr添加
+
 */
 
